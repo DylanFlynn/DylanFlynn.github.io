@@ -18,7 +18,7 @@ windyInit(options, windyAPI => {
 
     const { map } = windyAPI;
     // .map is instance of Leaflet map
-    store.set('isolines', 'pressure');
+    windyAPI.store.on('isolines');
 
     L.popup()
         .setLatLng([50.0, -75.0])
