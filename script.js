@@ -15,9 +15,10 @@ const options = {
 windyInit(options, windyAPI => {
     // windyAPI is ready, and contain 'map', 'store',
     // 'picker' and other usefull stuff
-    windyAPI.store.set('isolines', 'on')
+
     const { map } = windyAPI;
     // .map is instance of Leaflet map
+    store.set('isolines', 'pressure');
 
     L.popup()
         .setLatLng([50.0, -75.0])
